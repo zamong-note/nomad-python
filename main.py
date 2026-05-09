@@ -6,9 +6,10 @@ app = Flask("JobScrapper") # 앱을 실행함
 def home():
     return render_template("home.html", name="nico")
 
-@app.route("/hello")
+@app.route("/search")
 def hello():
-    return 'hello you!'
+    return render_template("search.html")
+
 
 
 app.run("0.0.0.0")    # Replit에서 하지 않고 로컬에서 해서 좀 다르다..
