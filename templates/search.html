@@ -12,12 +12,14 @@ href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
 <body>
     <main class="container">
         <h1>Search Results for "{{keyword}}"</h1>
+        <a target="_blank" href="/export?keyword={{keyword}}">Export to file</a>
         <figure><table class="striped">
             <thead>
                 <tr>
                     <th>Title</th>
                     <th>Company</th>
                     <th>Location</th>
+                    <th>Reward</th>
                     <th>Link</th>
                 </tr>
             </thead>
@@ -27,6 +29,7 @@ href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
                     <td>{{wanted_job.title}}</td>
                     <td>{{wanted_job.company_name}}</td>
                     <td>{{wanted_job.location}}</td>
+                    <td>{{wanted_job.reward}}</td>
                     <td><a href="{{wanted_job.link}}" targe="_blank">Apply now&rarr;</a></td>
                 </tr>
             {% endfor %}
