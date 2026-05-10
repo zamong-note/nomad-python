@@ -60,7 +60,7 @@ class WantedJobScrapper:
 
 
 
-def extract_wandted_jobs(keyword):
+def extract_wanted_jobs(keyword):
     scrapper = WantedJobScrapper()
     scrapper.add_keyword(keyword)
     return scrapper.start()
